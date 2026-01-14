@@ -1,0 +1,27 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+env/
+venv/
+.venv/
+pip-log.txt
+pip-delete-this-directory.txt
+
+# Project specific
+output/
+# Keep the output directory structure but ignore content, or ignore completely.
+# If you want to keep the folder:
+# output/*
+# !output/.gitkeep
+# For now, adhering to user privacy/storage, ignoring generated media.
+
+# Environment variables
+.env
+.env.local
+
+# IDEs
+.vscode/
+.idea/
