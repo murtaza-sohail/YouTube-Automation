@@ -8,6 +8,7 @@ def assemble_video_fast(
     audio_path: Path = Path("output/audio.wav"),
     output_path: Path = Path("output/final_video.mp4"),
 ):
+    from .config import IMAGE_DURATION_SECONDS
     """Create video quickly with minimal processing."""
     output_path.parent.mkdir(parents=True, exist_ok=True)
     
@@ -20,7 +21,7 @@ def assemble_video_fast(
     with open(concat_file, "w") as f:
         for img in images:
             f.write(f"file '{img.absolute()}'\n")
-            f.write(f"duration 9\n")
+            f.write(f"duration {IMAGE_DURATION_SECONDS}\n")
         # Repeat last image
         f.write(f"file '{images[-1].absolute()}'\n")
     

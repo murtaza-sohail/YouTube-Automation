@@ -9,7 +9,7 @@ if [ -f .env ]; then
     set -a
     source .env
     set +a
-fi
+fi 
 
 # Ensure keys are present
 if [ -z "$PEXELS_API_KEY" ] || [ -z "$CHATGPT_API_KEY" ] || [ -z "$ELEVENLABS_API_KEY" ]; then
