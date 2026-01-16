@@ -1,0 +1,29 @@
+{
+  "name": "youtube-automation",
+  "version": "1.0.0",
+  "description": "This project automates the creation of motivational YouTube videos. It generates a script, fetches relevant images, creates a voiceover, assembles the video, and prepares metadata.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/murtaza-sohail/YouTube-Automation.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/murtaza-sohail/YouTube-Automation/issues"
+  },
+  "homepage": "https://github.com/murtaza-sohail/YouTube-Automation#readme",
+  "dependencies": {
+    "axios": "^1.13.2",
+    "dotenv": "^17.2.3",
+    "edge-tts": "^1.0.1",
+    "fluent-ffmpeg": "^2.1.3",
+    "form-data": "^4.0.5",
+    "openai": "^6.16.0"
+  }
+}

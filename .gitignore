@@ -12,11 +12,6 @@ pip-delete-this-directory.txt
 
 # Project specific
 output/
-# Keep the output directory structure but ignore content, or ignore completely.
-# If you want to keep the folder:
-# output/*
-# !output/.gitkeep
-# For now, adhering to user privacy/storage, ignoring generated media.
 
 # Environment variables
 .env
@@ -25,3 +20,10 @@ output/
 # IDEs
 .vscode/
 .idea/
+
+# Node
+node_modules/
+package-lock.json
+build/
+dist/
+.npm/

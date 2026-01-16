@@ -43,19 +43,35 @@ Required Keys:
 
 ## Usage
 
-The entire pipeline can be run using the provided shell script:
+The pipeline can be run using either Python or JavaScript (Node.js).
 
+### Python Version
 ```bash
+# Full Video
 ./run_pipeline.sh
+
+# YouTube Shorts
+./run_shorts.sh
 ```
 
-### Steps Performed:
-1.  **Script Generation**: Creates a motivational script.
-2.  **Image Fetching**: Downloads visuals based on keywords.
-3.  **Voiceover Generation**: Converts script to audio.
-4.  **Video Assembly**: Combines audio and visuals into a video.
-5.  **Metadata Generation**: Creates title, description, and tags.
-6.  **Upload**: (Optional) Uploads to YouTube if configured.
+### JavaScript Version (Node.js)
+```bash
+# Install dependencies
+npm install
+
+# Full Video
+./run_pipeline_js.sh
+
+# YouTube Shorts
+./run_shorts_js.sh
+```
+
+## Steps Performed:
+1.  **Script Generation**: Creates a motivational script using OpenAI.
+2.  **Image Fetching**: Downloads visuals from Pexels (Landscape or Portrait).
+3.  **Voiceover Generation**: Converts script to audio using Microsoft Edge TTS.
+4.  **Video Assembly**: Combines audio and visuals using FFmpeg (with effects).
+5.  **Metadata Generation**: Creates title, description, and tags with SEO optimization.
 
 ## Output
 
